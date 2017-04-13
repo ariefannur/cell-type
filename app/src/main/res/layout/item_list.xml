@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/imgList"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_toRightOf="@+id/imgList"
+        tools:text="Title company"
+        />
+
+    <TextView
+        android:id="@+id/txtIndustri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_alignParentRight="true"
+        tools:text="industry_name"
+        style="@style/Base.TextAppearance.AppCompat.Caption"
+        />
+
+    <TextView
+        android:id="@+id/txtAvg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/txtIndustri"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginRight="16dp"
+        tools:text="1.0"
+        android:textColor="@color/yellow"
+        />
+
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_toLeftOf="@+id/txtAvg"
+        android:layout_below="@+id/txtTitle"
+        android:src="@android:drawable/star_big_on"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_below="@id/txtAvg"
+        android:layout_marginTop="8dp"
+        />
+
+</RelativeLayout>
